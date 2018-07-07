@@ -9,4 +9,8 @@ Description on https://compphys.go.ro/lattice-boltzmann/
 
 Build :
     nmake could be used instead of vs/msbuild .
-    vs2013
+    req vs2013 . VS2013 x64 Native Tools Command Prompt
+```
+cd LatticeBoltzmann
+nmake
+```
