@@ -1,6 +1,6 @@
 CC=cl
 CFLAGS=-c -DSTRICT -G3 -Ow -W3 -Zp -Tp
-CFLAGSMT=-c /D_WIN64 /D_AFXDLL /MD /nologo /W3 /WX- /O2 /Oi /Ot /Oy- /DWIN32 /D_WINDOWS /DNDEBUG /D_UNICODE /DUNICODE /Gm- /GS- /Gy /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Fax64\Release\ /Fox64\Release\ /Fdx64\Release\vc100.pdb /Gd /errorReport:none 
+CFLAGSMT=-c /D_WIN64 /D_AFXDLL /MD /nologo /W3 /WX- /O2 /DWIN32 /D_WINDOWS /DNDEBUG /D_UNICODE /DUNICODE /Gm- /GS- /Gy /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Fax64\Release\ /Fox64\Release\ /Fdx64\Release\vc100.pdb /Gd /errorReport:none  /Qpar /Qpar-report:1 /Qvec-report:1
 LINKER=link
 GUIFLAGS=-SUBSYSTEM:windows /OUT:x64\Release\LatticeBoltzmann.exe /NOLOGO  /PDB:"x64\Release\LatticeBoltzmann.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:NOICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 /ERRORREPORT:NONE /ENTRY:wWinMainCRTStartup /MANIFESTUAC:yes /MANIFESTUAC:level='asInvoker'
 DLLFLAGS=-SUBSYSTEM:windows -DLL
